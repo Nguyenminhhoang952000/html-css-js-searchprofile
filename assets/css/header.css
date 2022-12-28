@@ -1,0 +1,116 @@
+/* header */
+#header{
+    background-color: var(--bg-color-header);
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid transparent;
+    position: relative;
+    border-color: #080808;
+    padding-right: 16px;
+    padding-left: 16px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top:0;
+    z-index: 6;
+    min-height: 32px;
+    overflow: hidden;
+}
+.navbar__left{
+    white-space: nowrap;
+    display: flex;
+    color:#9d9d9d;
+    z-index: 200;
+}
+.navbar__info .navbar__info--name:hover,
+.navbar__left li:hover a{
+    color:#ffffff;
+}
+.navbar__left .menu_more:hover::after{
+    border-color: #ffffff transparent transparent transparent;
+}
+.navbar__left--action{
+    font-size: 1.3rem;
+    padding:5px 8px;
+    margin-top: 2px;
+    position: relative;
+    cursor: pointer;
+}
+.menu_more::after{
+    content: '';
+    display: block;
+    border: 4px solid;
+    border-color: #9d9d9d transparent transparent transparent;
+    position: absolute;
+    top:42%;
+    right: -5px; 
+}
+.navbar__right{
+    font-size: 1.3rem;
+    padding:4px 8px;
+    color:#9d9d9d;
+    display: flex;
+    margin-right: -16px;
+    cursor: pointer;
+
+}
+.navbar__right .navbar__right--icon:hover{
+    opacity: 1;
+}
+.navbar__right--icon{
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    margin-right: 1.7rem;
+    opacity: 0.6;
+}
+.navbar__info{
+    display: flex;
+    align-items: center;
+}
+
+.navbar__info--img{
+   width: 1.8rem;
+   max-height: 1.8rem;
+   border-radius: 50%;
+   margin-right: 4px;
+   object-fit: cover;
+}
+.navbar__info--name{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: top;
+    max-width: 150px;
+}
+
+.menu{
+    position: absolute;
+    float: left;
+    padding: 7px 8px;
+    margin-top: -1px;
+    margin-bottom: -1px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    border-color: #333;
+    top:12%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+.menu .icon-bar{
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: #352e2e;
+}
+.menu .icon-bar + .icon-bar{
+    margin-top: 4px;
+}
+.loader,
+.menu{
+    display: none;
+}

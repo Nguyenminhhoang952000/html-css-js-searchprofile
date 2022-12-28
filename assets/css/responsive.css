@@ -1,0 +1,308 @@
+/* Mobile and tablet */
+@media (max-width: 1023px) {
+    .navbar__left--action:nth-child(5),
+    .navbar__left--action:nth-child(10),
+    .navbar__left--action:nth-child(11){
+        display: none;
+    }
+    .navbar__right{
+        padding-right: 10px;
+    }
+    .loader,
+    .menu{
+        display: block;
+    }
+}
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .timesheet{
+        width: 50%;
+    }
+    .hr_notifications{
+        width: 50%;
+    }
+    #header{
+        min-height: 32px;
+    }
+
+    .navbar__left--action:nth-child(5),
+    .navbar__left--action:nth-child(10),
+    .navbar__left--action:nth-child(11){
+        display: none;
+    }
+    .navbar__right{
+        padding-right: 10px;
+    }
+    .container{
+        width: 100%;
+        left: 0;
+    }
+    .profile{
+        top: var(--height-header);
+        width: 100%;
+        display: flex;
+        height: 100px;
+        justify-content: space-between;
+        align-items: center;
+        transform:translateX(-100%);
+        overflow: hidden;
+        animation: showProfileTabletOut 0.3s linear forwards; 
+        padding: 5px 70px;
+        border-bottom: 1px solid rgb(197, 194, 194);
+
+    }
+    .profile__img{
+        width: 120px;
+        overflow: hidden;
+        background: var(--bg-color-img);
+        padding:0;
+    }
+    .loader,
+    .menu{
+        display: block;
+    }
+        .profile__details{
+        margin-top: 0;
+    }
+    .profile__information--birtdays{
+        width: 100px;
+        padding:0;
+    }
+    .profile__information--gender{
+        padding:0;
+    }
+    .profile__name{
+        padding:15px;
+    }
+    .profile__name .text-light:nth-child(2){
+        display: none;
+    }
+    .profile .profile__details--startwork{
+        display: none;
+    }
+    /* #main .content .profile{
+        display: none;
+
+    } */
+    .container{
+        padding-left: 0;
+    }
+    .information_item{
+        width: 45%;
+    }
+    .manager_content {
+        margin-left: 30px;
+
+    }
+    .employess{
+        justify-content: center;
+    }
+    .employess__box:nth-child(1){
+        display: none;
+    }
+    .employess__box.left{
+        display: none;
+    }
+    .employess__box{
+        height: 40px;
+    width: 90%;
+    }
+    .control__panel{
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    #menuProfile:checked ~ #main .content .profile{
+        animation: showProfileTabletIn 0.3s linear forwards; 
+
+    }
+}
+@keyframes showProfileTabletOut{
+    0%{
+        transform:translateX(0);
+    }
+    100%{
+        transform:translateX(100%);
+    }
+}
+@keyframes showProfileTabletIn{
+    0%{
+        transform:translateX(-100%);
+    }
+    100%{
+        transform:translateX(0);
+    }
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    .employess{
+        justify-content: center;
+    }
+    .employess__box:nth-child(1){
+        display: none;
+    }
+    .employess__box.left{
+        display: none;
+    }
+    .employess__box{
+        height: 40px;
+    width: 90%;
+    }
+    .control__panel{
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu_more::after{
+        right:88%;
+    }
+    .loader,
+    .menu{
+        display: none;
+    }
+    .header-responsive{
+        display: flex;
+    }
+    .navbar__left--action:nth-child(5),
+    .navbar__left--action:nth-child(10),
+    .navbar__left--action:nth-child(11){
+        display: block;
+    }
+    #header{
+        flex-direction: column;
+        padding:0;
+        padding-top: 38px;
+        animation: showBarIn 0.2s ease forwards;
+        /* transform-origin: center top; */
+        transition: height 0.2s linear ;
+        overflow: hidden;
+        padding-top: 34px;
+    }
+    .navbar__left{
+        flex-direction: column;
+    }
+   
+    .navbar__right{
+        flex-direction: column-reverse;
+    }
+    .navbar__right--icon,
+    .navbar__info--name{
+        padding:8px 0;
+        text-align: left;
+    }
+    .information-job{
+        justify-content: center;
+    }
+    .timesheet{
+        width: 90%;
+    }
+    .information__member{
+        justify-content: center;
+    }
+    .hr_notifications{
+        width: 90%;
+    }
+    .profile{
+        top: var(--height-header);
+        width: 100%;
+        transform: translateX(-110%);
+        animation: showProfileIn 0.3s linear forwards; 
+    }
+    .profile__img{
+        height: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+    }
+    .profile__name{
+        margin-top: -40px;
+    }
+    .profile__img img{
+        width: 60%;
+        height: 60%;
+    }
+    .container{
+        width: 100%;
+        left: 0;
+        padding-left: 0;
+
+    }
+   
+    #checkbox:checked ~ #header{
+        animation: showBarOut 0.2s ease forwards;
+    }
+    /* #checkbox:checked ~ .navbar__left{
+        display: none;
+    } */
+    #checkboxProfile:checked ~ #main .content .profile{
+        animation: showProfileOut 0.3s linear forwards; 
+
+    }
+
+    .information_item{
+        width: 98%;
+    }
+    #checkbox:checked ~ .control__panel{
+        top:700px;
+        z-index: 100;
+    }
+    .profile__img {
+        width: 100%;
+        height: 30%;
+        padding:0;
+    }
+    
+}
+@keyframes showBarIn{
+    0%{
+        height: 0;
+    }
+
+    100%{
+        height: 462px;
+    }
+}
+@keyframes showBarOut{
+    0%{
+        opacity: 1;
+        height: 462px;
+    }
+    100%{
+        height: 0;
+    }
+}
+@keyframes showProfileIn {
+    0%{
+        transform: translateX(-110%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes showProfileOut {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-110%);
+    }
+}
+@keyframes panel{
+    0%{
+        top:var(--height-header,32px);
+    }
+    100%{
+        top:700px;
+        z-index: 100;
+    }
+}
+@keyframes container{
+    0%{
+        top:var(--height-sumpanel);
+    }
+    100%{
+        top:518px;
+    }
+}

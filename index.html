@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employees</title>
+    <link rel="icon" href="./assets/img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/profile.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/css/regular.min.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/css/solid.min.css">
+</head>
+<body>
+    <div id="app">
+        
+        <div class="header-responsive">
+            <label for="checkboxProfile" class="menu-left">
+                <!-- <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span> -->
+                <img src="./assets/img/img.jpg" alt="NMH">
+
+            </label>
+            <label for="checkbox" class="icon-menu menu-right">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </label>      
+        </div> 
+        <div class="loader">
+            <div class="inner one"></div>
+            <div class="inner two"></div>
+            <div class="inner three"></div>
+          </div>
+        <label for="menuProfile" class="menu">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </label>
+        <input type="checkbox" id="menuProfile" checked>
+        <input type="checkbox" id="checkbox" hidden checked>
+        <input type="checkbox" id="checkboxProfile" hidden checked>
+        <div id="header">
+            <ul class="navbar__left">
+                <li class="navbar__left--action">
+                    <a href="/">
+                        <span>Dashboard</span>
+                    </a> </li>
+                <li class="navbar__left--action">
+                    <a href="/">
+                        <span>Tax Finalization</span>
+                    </a> </li>
+                <li class="navbar__left--action">
+                    <a href="/">
+                        <span>Calendar</span>
+                    </a> </li>
+                <li class="navbar__left--action">
+                    <a href="/">
+                        <span>Working Timesheet</span>
+                    </a> </li>
+                <li class="navbar__left--action">
+                    <a href="/">
+                        <span>Appraisals</span>
+                    </a> </li>
+                <li class="navbar__left--action">
+                    <a href="/">
+                        <span>Project</span>
+                    </a> </li>
+                <li class="navbar__left--action">
+                    <a href="/">
+                        <span>Timesheets</span>
+                    </a> </li>
+                <li class="navbar__left--action">
+                    <a href="/">
+                        <span>Employees</span>
+                    </a> </li>
+                <li class="navbar__left--action">
+                    <a href="/">
+                        <span>Assets</span>
+                    </a> </li>
+                <li class="navbar__left--action">
+                    <a href="/">
+                        <span>Helpdesk</span>
+                    </a> </li>
+                <li class="navbar__left--action">
+                    <a href="/">
+                        <span>Personal Info</span>
+                    </a> 
+                </li>
+                <li class="navbar__left--action menu_more">
+                    <a href="/">
+                        <span>More</span>
+                    </a> 
+                    <!-- <ul class="menu_more">
+                        <li>1</li>
+                        <li>2</li>
+                    </ul> -->
+                </li>
+            </ul>
+            <div class="navbar__right">
+                <div class="navbar__right--icon time">
+                    <i class="fa-solid fa-timer"></i>
+                </div>
+                <div class="navbar__right--icon message">
+                    <i class="fas fa-comments"></i>
+                </div>
+                <div class="navbar__info">
+                    <img class="navbar__info--img" src="./assets/img/img.jpg" alt="img-user">
+                    <span class="navbar__info--name">Nguyễn Minh Hoàng</span>
+                </div>
+            </div>
+        </div>
+        <div id="main">
+            <div class="content">
+                <div class="profile">
+                    <div class="profile__img">
+                        <img src="./assets/img/company_logo.png" alt="NMH">
+                    </div>
+                    
+                </div>
+                <div class="container">
+                    <div class="control__panel">
+                        <div class="employess">
+                            <div class="employess__box">Employess</div>
+                            <div class="employess__box">
+                                <div class="employess__searchview">
+                                    <div class="search">
+                                        <!-- <div class="employess__close">
+                                            <span class="fa fa-filter o_searchview_facet_label"></span>
+                                            <div class="o_facet_values"><span>
+                                                Approved
+                                            </span></div>
+                                            <i class="fas fa-times"></i>
+                                        </div> -->
+                                        <input type="text" class="employess__input" placeholder="Search...">
+                                        <span class="employess__search">
+                                            <i class="fas fa-search-plus"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="employess__box left">
+                                <div class="left-name">
+                                    <input type="text" class="left_input input__box" placeholder="Tên nhân viên">
+                                    <span class="left_count">Trị số</span>
+                                    <span class="left_email input__box">Email</span>
+                                    <input type="text" class="left_job input__box" placeholder="Vị trí công việc">
+                                    <button class="left_btn">Thêm</button>
+                                </div>
+                            </div>
+                            <div class="employess__box right">
+                                <select class="filter">
+                                    <option style="display: none"><i class="fas fa-bars"></i> Filter <i class="fas fa-caret-down"></i></option>
+                                    <option value="1">Tên A - Z</option>
+                                    <option value="2">Tên Z - A</option>
+                                </select>
+                                <div class="box_right">
+                                    <div class="pager_text">
+                                        <div class="pager_counter">
+                                            <span class="pager-value">1-40</span>
+                                            /
+                                            <span class="pager_limit">160</span>
+                                        </div>
+                                        <div class="pager_btn">
+                                            <button class="btn pager_previous">
+                                                <i class="fas fa-chevron-left"></i>
+                                            </button>
+                                            <button class="btn pager_next">
+                                                <i class="fas fa-chevron-right"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="switch_buttons">
+                                        <span class="large btn">
+                                            <i class="fas fa-th-large"></i>
+                                        </span>   
+                                        <span class="switch_list btn">
+                                            <i class="fas fa-list"></i>
+                                        </span>                             
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="manager_content">
+                            <div class="manager_items">
+                                <!-- Item -->
+                                <!-- <div class="information_item">
+                                    <div class="kanban_image">
+                                        <img src="./assets/img/img.jpg" alt="Minh Hoang">
+                                        <div class="kanban_icons">
+                                            <span class="kanban_messages">
+                                                <i class="fas fa-comments"></i>
+                                                16
+                                            </span>
+                                            <span class="kanban_followers">
+                                                <i class="fas fa-cloud-meatball"></i>
+                                                16
+                                            </span>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="kanban_detail">
+                                        <div class="kanban_record-top">
+                                            <div class="kanban_record-title">
+                                                Minh Hoang
+                                            </div>
+                                            <li>Developer</li>
+                                        </div>
+                                        <ul class="kanban_information">
+                                            <li>
+                                                <i class="fas fa-envelope"></i>
+                                                <span>hoang.nguyen12@ntqsolution.com.vn</span>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-phone-alt"></i>
+                                                <span>0981287660</span>
+                                            </li>
+                                        </ul>
+                                        <button class="kanban_follow">Follow</button>
+                                    </div>
+                                </div> -->
+                                
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="./main.js"></script>
+</body>
+</html>

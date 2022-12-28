@@ -1,0 +1,447 @@
+
+/* Main layout */
+#main{
+    display: flex;
+    flex: 1 1 auto;
+    height: 100%;
+    width: 100%;
+    flex-flow: column nowrap;
+    z-index: 2;
+    position: relative;
+    top: -18px;
+}
+.control__panel{
+    display: flex;
+    flex-flow: row wrap;
+    height: 100px;
+    width: 100%;
+    background-color: var(--bg-color-panel);
+    right: 0;
+    position: fixed;
+    z-index: 300;
+    padding-top: 10px;
+    padding-right: 16px;
+    padding-left: 236px;
+    margin-left: 100px;
+    padding-bottom: 10px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #c6c6c6;
+}
+.employess{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.employess__box{
+    width: 50%;
+    margin: 0;
+    display: flex;
+}
+.employess__box:nth-child(1){
+    display: inline-block;
+    max-width: 90%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: top;
+    color: #777777; 
+    font-size: 1.8rem;
+}
+.employess__searchview{
+    width: 100%;
+}
+.employess__searchview{
+    width: 100%;
+    position: relative;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+}
+.search{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    line-height: 30px;
+}
+.employess__close{
+    display: flex;
+    position: absolute;
+}
+
+.employess__input{
+    width: 100%;
+    border: none;
+    padding: 5px 0 5px 5px ;
+    font-size: 1.3rem;
+    color:rgb(76,76,76);
+}
+.employess__search{
+    position: absolute;
+    left: auto;
+    bottom: auto;
+    right: 5px;
+    font-size: 1.6rem;
+    cursor: pointer;
+    font-weight: 300;
+}
+.employess__box.right{
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.employess__box .left-name{
+    display: flex;
+    height: 30px;
+    width: 100%;
+    font-size: 1.2rem;
+}
+.image.png{
+
+}
+.left_input{
+
+}
+.input__box{
+    border: 1px solid #ccc;
+    padding:8px;
+    width: 25%;
+    font-size: 1.2rem;
+    margin-left: -1px;
+}
+.left_count{
+    border: 1px solid #ccc;
+    padding:8px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    color: #706d6d;
+    margin-left: -1px;
+}
+.left_email{
+    display: flex;
+    align-items: center;
+    color: #706d6d;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 32%;
+}
+.left_job{
+
+}
+.left_btn{
+    border: 1px solid #ccc;
+    padding:8px;
+    display: flex;
+    align-items: center;
+    background-color: #7c7bad;
+    color: white;
+    margin-left: -1px;
+}
+.filter{
+    height: 30px;
+    border-color: #cccccc;
+
+}
+.filter option{
+    padding:5px;
+}
+/* Select */
+select {
+    border-color: #cccccc;
+
+  }
+/* Select */
+.box_right{
+    display: flex;
+    flex-direction: row;
+}
+.pager_text{
+    display: flex;
+    align-items: center;
+    /* margin: auto 0 auto auto; */
+    padding-left: 5px;
+    text-align: center;
+    user-select: none;
+    font-size: 1.3rem;
+    color:rgb(74,74,74);
+}
+.pager_counter{
+    margin-right: 5px;
+    text-align: center;
+}
+.pager_btn{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+.switch_list.btn,
+.large.btn,
+.pager_btn .btn{
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #4c4c4c;
+    background-color: #ffffff;
+    border: 1px solid;
+    border-color: #cccccc;
+}
+.switch_list.btn:hover,
+.large.btn:hover,
+.pager_btn .btn:hover{
+    color: #4c4c4c;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+.pager_previous{
+    border-radius: 3px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    margin-left: 0;
+    cursor: pointer;
+
+
+}
+.pager_next{
+    border-radius: 3px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    margin-left: -4px;
+    cursor: pointer;
+
+
+}
+
+.switch_buttons{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+}
+.large{
+    border-radius: 3px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    margin-left: 16px;
+    cursor: pointer;
+}
+
+.switch_list{
+    border-radius: 3px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    margin-left: -4px;
+    cursor: pointer;
+
+}
+
+
+/* content */
+.content{
+    flex: 1 1 auto;
+    position: relative; 
+    /* margin-left: -16px; */
+    z-index: 5;
+    display: flex;
+    min-height: 1px;
+    top:var(--height-header);
+    bottom: 0;
+}
+
+/* content right */
+.container{
+    width: 100%;
+    z-index:200;
+    position: relative;
+    padding-left: 220px;
+    bottom:0;
+    overflow-x:hidden;
+    display:flex;
+    flex-direction: column;
+    /* background-color: #fff; */
+    /* padding-bottom: 25px; */
+}
+
+.manager_content{
+    margin-top: 100px;
+    flex: 1 1 auto;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    position: relative;
+}
+.manager_items{
+    /* position: relative;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 1000px; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 8px 8px;
+    
+}
+.information_item{
+    width: 23%;
+    position: relative;
+    border:1px solid #d9d7d7;
+    display: flex;
+    margin: 4px 8px;
+    padding:8px 8px;
+    background-color: white;
+    font-size: 1.3rem;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.kanban_image{
+    width: 64px;
+    font-size: 1.3rem;
+}
+.kanban_image img{
+    width: 100%;
+    height: 64px;
+    object-fit: cover;
+}
+.kanban_icons{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.kanban_messages{
+    display: flex;
+}
+
+.kanban_followers{
+    display: flex;
+    padding-left: 5px;
+}
+
+.kanban_detail{
+    padding-left: 10px;
+    flex: 1;
+    overflow: hidden;
+}
+.kanban_record-top{
+    margin-bottom: 5px;
+}
+.kanban_record-top li{
+    line-height: 1.2;
+}
+.kanban_record-title{
+
+}
+.kanban_information{
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.kanban_information li{
+    display: flex;
+}
+.kanban_information li:nth-child(1){
+    padding-bottom: 2px;
+}
+.kanban_information span{
+    white-space: nowrap;
+    padding-left: 5px;
+}
+.kanban_follow{
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    transition: all .15s ease-in-out;
+    border-radius: 0;
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #ffffff;
+    background-color: #7c7bad;
+    border-color: #7c7bad;
+    border: 1px solid transparent;
+    position: absolute;
+    top: auto;
+    left: auto;
+    bottom: 8px;
+    right: 8px;
+}
+
+/* animation menu */
+
+.loader {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    width: 64px;
+    transform: translateX(-50%);
+    height: 64px;
+    border-radius: 50%;
+    perspective: 800px;
+    z-index: 90;
+  }
+  
+  .inner {
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  
+  .inner.one {
+    left: 0%;
+    top: 0%;
+    animation: rotate-one 1s linear infinite;
+    border-bottom: 3px solid #aa334a;
+  }
+  
+  .inner.two {
+    right: 0%;
+    top: 0%;
+    animation: rotate-two 1s linear infinite;
+    border-right: 3px solid #aa334a;
+  }
+  
+  .inner.three {
+    right: 0%;
+    bottom: 0%;
+    animation: rotate-three 1s linear infinite;
+    border-top: 3px solid #aa334a;
+  }
+  
+  @keyframes rotate-one {
+    0% {
+      transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+    }
+  
+    100% {
+      transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+    }
+  }
+  
+  @keyframes rotate-two {
+    0% {
+      transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+    }
+  
+    100% {
+      transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+    }
+  }
+  
+  @keyframes rotate-three {
+    0% {
+      transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+    }
+  
+    100% {
+      transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+    }
+  }

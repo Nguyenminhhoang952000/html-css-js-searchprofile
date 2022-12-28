@@ -1,0 +1,101 @@
+/* content__left */
+.profile{
+    padding: 0px;
+    height: 100%;
+    background-color: var(--bg-color-img);
+    position: fixed;
+    top:var(--height-header);
+    z-index: 999;
+    width: 220px;
+    height: 100vh;
+    border-right: 1px solid #c6c6c6;
+    /* padding-left: 16px; */
+
+}
+.profile__img{
+    padding-right: 0px;
+    width: 100%;
+    overflow: hidden;
+    background: var(--bg-color-img);
+    padding:14px;
+
+}
+.profile__img img{
+    /* border-radius: 50%; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profile__name{
+    background-color: var(--bg-color-img);
+}
+.profile__name h2{
+    text-align: center;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 17px;
+    padding-top: 12px;
+    margin-bottom: 2px;
+    color: #fff;
+}
+
+.text-light{
+    padding: 0 0 9px;
+    text-align: center;
+    font-size: 12px;
+    color: #f3f3f3;
+}
+.profile__details{
+    margin-top: 1.3rem;
+}
+.profile__information{
+    display: flex;
+    justify-content: center;
+    font-size: 1.3rem;
+    border-bottom: 1px solid #4d769b;
+
+}
+.profile__information--gender{
+    text-align: center;
+    border-right: 1px solid #4d769b;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    padding: 10px;
+}
+.profile__information--icon{
+    margin: 0 0 4px;
+    font-size: 1.5rem;
+    font-weight: 200;
+
+}
+.profile__information--text{
+    margin-bottom: 4px;
+}
+.profile__information--birtdays{
+    text-align: center;
+    border-right: 1px solid #4d769b;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    color: #b6b6b6;
+    padding: 10px;
+    margin-top: -5px;
+}
+
+.profile__details--startwork{
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 1.3rem;
+    margin-top: 1.8rem;
+}
+.profile__details--text{
+    margin: 0 0 9px;
+}
+.profile__details--number{
+    margin: 0 0 9px;
+}
